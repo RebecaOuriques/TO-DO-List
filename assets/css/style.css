@@ -1,0 +1,240 @@
+.titulo {
+  width: 100vw;
+  height: 40px;
+  font-family: 'Bellota', cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+main {
+  width: 100vw;
+  height: calc(100vh - 86px);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #6C4AB6,#8D72E1,#8D9EFF,#B9E0FF) no-repeat;
+  margin: 0;
+  display: block;
+  justify-content: space-between;
+  animation: colors 15s ease infinite;
+}
+
+.imagem {
+  background-image: url(logo.svg);
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+}
+
+
+/* .todo-list {
+  display: block;
+  font-family: 'Bellota', cursive;
+  padding: 1rem;
+  width: 700px;
+  height: 700px;
+  margin: 0;
+} */
+
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-family: 'Bellota', cursive;
+  color: #000000;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-input,
+.form-button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.form-input {
+  outline: none;
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+}
+
+.todo-list {
+  background-color: rgba(57, 4, 100, 0.541);
+  font-family: 'Bellota', cursive;
+  transition: all 1s;
+  padding: 1rem;
+  width: 50vw;
+  min-height: 60vh;
+  margin-right: 50px;
+
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F6F1D1;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+}
+
+.check-button, .delete-button {
+  background-color: #F6F1D1;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.check-button:hover, .delete-button:hover {
+  align-items:right ;
+  font-size: 1.1rem;
+  background-color: #beb8ba;
+  border: 1px bold #000000;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.15;
+}
+
+.task.done .check-button {
+  background-color: #46494C;
+  color: #F6F1D1;
+}
+
+.check-icon {
+  display: block;
+  padding: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.task.done .check-icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 0;
+  padding-right: 100px;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+.rodape {
+  align-items: center;
+  display: flex;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  justify-content: center;
+  width: 100vw;
+}
+
+.rodape__social {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 150px;
+}
+
+.rodape__midia {
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* 
+.app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  width: 100vw;
+  height: 96.5vh;
+}
+
+.todo-list {
+  background-color: rgba(57, 4, 100, 0.541);
+  font-family: 'Bellota', cursive;
+  transition: all 1s;
+  padding: 1rem;
+  width: 10vw;
+  height: 10vh;
+  margin: 0;
+}
+
+.title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-family: 'Bellota', cursive;
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form-input, .form-button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+.form-input {
+  outline: none;
+  background-color: #F6F1D1;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.form-button {
+  border: 1px;
+  background: #F6F1D1;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+.form-button:hover {
+  color: #F6F1D1;
+  background: rgba(246, 241, 209, 0.1);
+} */
